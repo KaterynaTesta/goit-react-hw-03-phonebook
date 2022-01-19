@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from '../ContactForm/ContactFormStyled';
 
 const ContactListItem = ({ contact, onDeleteContact }) => (
   <>
     <span>
       {contact.name}: {contact.number}
     </span>
-    <button onClick={() => onDeleteContact(contact.id)}>Delete</button>
+    <Button onClick={() => onDeleteContact(contact.id)}>Delete</Button>
   </>
 );
 
